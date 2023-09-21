@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.banking.com/springsoap/gen"
+	xmlns:tns="http://www.banking.com/springsoap/gen"
+	elementFormDefault="qualified">
+	
+	<xsd:element name="transactionRequest">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:long" />
+			<xsd:element name="amount" type="xsd:double" />
+			<xsd:element name="transactionType" type="xsd:string" />
+
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+	<xsd:element name="transactionResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="status" type="xsd:string" />
+				<xsd:element name="balance" type="xsd:double" />
+				
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	
+	
+	
+</xsd:schema>
